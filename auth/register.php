@@ -149,7 +149,7 @@ include __DIR__ . '/../includes/header.php';
         <div class="row g-3">
           <div class="col-md-6">
             <label class="form-label">Phone Number <span class="text-danger">*</span></label>
-            <input type="tel" name="contact_number" id="phoneNumber" class="form-control" placeholder="+63 9XX XXX XXXX" pattern="[0-9+() .-]{7,20}" value="<?= clean($old['contact_number']) ?>" required>
+            <input type="tel" name="contact_number" id="phoneNumber" class="form-control" placeholder="+63 9XXXXXXXXX" pattern="[0-9+() .-]{7,20}" value="<?= clean($old['contact_number']) ?>" required>
           </div>
           <div class="col-md-6">
             <label class="form-label">Age <span class="text-muted">(optional)</span></label>

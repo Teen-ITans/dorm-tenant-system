@@ -73,7 +73,7 @@ render_module_tabs([
           <div class="col-md-6"><label class="form-label">Last Name <span class="text-danger">*</span></label><input class="form-control" name="last_name" placeholder="Enter last name" required></div>
         </div>
         <div class="mb-3 mt-3"><label class="form-label">Email Address <span class="text-danger">*</span></label><input type="email" class="form-control" name="email" placeholder="user@email.com" required></div>
-        <div class="mb-3"><label class="form-label">Phone Number <span class="text-danger">*</span></label><input type="tel" class="form-control" name="contact_number" id="adminPhoneNumber" pattern="[0-9+() .-]{7,20}" placeholder="+63 XXX XXX XXXX" required></div>
+        <div class="mb-3"><label class="form-label">Phone Number <span class="text-danger">*</span></label><input type="tel" class="form-control" name="contact_number" id="adminPhoneNumber" pattern="[0-9+() .-]{7,20}" placeholder="+63 9XXXXXXXXX" required></div>
         <div class="row g-2 mb-3">
           <div class="col-md-6"><label class="form-label">Password <span class="text-danger">*</span></label><div class="input-field-wrapper position-relative"><i class="bi bi-lock field-icon-left"></i><input type="password" id="password" name="password" class="form-control custom-input px-5 js-password-strength" data-strength-for="password" placeholder="Enter a strong password" autocomplete="new-password" minlength="8" required><button type="button" class="btn-toggle-eye js-toggle-pwd" data-target="password" aria-label="Toggle password visibility"><i class="bi bi-eye"></i></button></div></div>
           <div class="col-md-6"><label class="form-label">Confirm Password <span class="text-danger">*</span></label><div class="input-field-wrapper position-relative"><i class="bi bi-lock field-icon-left"></i><input type="password" id="confirm_password" name="confirm_password" class="form-control custom-input px-5" placeholder="Re-enter your password" autocomplete="new-password" minlength="8" required><button type="button" class="btn-toggle-eye js-toggle-pwd" data-target="confirm_password" aria-label="Toggle password visibility"><i class="bi bi-eye"></i></button></div></div>
@@ -93,7 +93,7 @@ render_module_tabs([
         </div>
         <div class="mb-3"><label class="form-label">User Category</label><select name="category" class="form-select"><option value="" disabled selected>Select category...</option><option value="student">Student / Resident</option><option value="staff">Administrative Staff</option></select></div>
         <div class="mb-3"><label class="form-label">Emergency Contact Name</label><input class="form-control" name="emergency_contact_name" placeholder="Full name"></div>
-        <div class="mb-3"><label class="form-label">Emergency Contact Phone</label><input type="tel" class="form-control" name="emergency_contact_phone" placeholder="912 123 1234"></div>
+        <div class="mb-3"><label class="form-label">Emergency Contact Phone</label><input type="tel" class="form-control" name="emergency_contact_phone" placeholder="+63 9XXXXXXXXX"></div>
         <button class="btn btn-sm btn-action-primary w-100 rounded-pill fw-bold">Save User</button>
       </section>
       <section class="registration-card role-selection-card">

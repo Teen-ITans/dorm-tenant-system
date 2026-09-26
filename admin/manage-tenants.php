@@ -138,7 +138,7 @@ render_module_tabs([
         <div class="modal-body">
           <div class="mb-3"><label class="form-label">First Name</label><input class="form-control" name="first_name" id="et_first_name" required></div>
           <div class="mb-3"><label class="form-label">Last Name</label><input class="form-control" name="last_name" id="et_last_name" required></div>
-          <div class="mb-3"><label class="form-label">Phone</label><input class="form-control" name="phone" id="et_phone"></div>
+          <div class="mb-3"><label class="form-label">Phone</label><input class="form-control" name="phone" id="et_phone" data-ph-mobile></div>
           <div class="mb-3">
             <label class="form-label">Tenant Type</label>
             <select class="form-select" name="tenant_type" id="et_type">

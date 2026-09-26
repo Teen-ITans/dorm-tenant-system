@@ -70,27 +70,12 @@ document.addEventListener('DOMContentLoaded', function () {
     animateAuthBackground();
   }
 
-  function formatPhoneNumber(value) {
-    const digits = value.replace(/\D/g, '').slice(0, 12);
-    if (digits.startsWith('63')) {
-      let result = '+' + digits.slice(0, 2);
-      if (digits.length > 2) result += ' ' + digits.slice(2, 5);
-      if (digits.length > 5) result += ' ' + digits.slice(5, 8);
-      if (digits.length > 8) result += ' ' + digits.slice(8, 12);
-      return result;
-    }
-    let result = digits.slice(0, 4);
-    if (digits.length > 4) result += ' ' + digits.slice(4, 7);
-    if (digits.length > 7) result += ' ' + digits.slice(7, 11);
-    return result;
-  }
-
-  const phoneInput = document.getElementById('phoneNumber');
-  if (phoneInput) {
-    phoneInput.addEventListener('input', function (event) {
-      event.target.value = formatPhoneNumber(event.target.value);
-    });
-  }
+  // Phone-number formatting (with the +63 country code, live as-you-type)
+  // now lives in one place — assets/js/validation.js's phSetup/phRender —
+  // which already applies to every phone-like field across the app
+  // (register, admin add-user, edit-tenant, etc). Having a second
+  // formatter here fighting it on the same 'input' event was exactly
+  // what made the +63 prefix disappear while typing.
 
   function updateChecklistItem(element, isValid) {
     if (!element) return;
